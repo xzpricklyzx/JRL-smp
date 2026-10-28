@@ -12,66 +12,90 @@
     <aside class="server-rail" aria-label="Snelle navigatie">
         <a class="rail-logo" href="index.html" aria-label="JRL SMP home">J</a>
         <nav class="rail-nav">
-            <a class="rail-link" href="index.html" aria-label="Home"><span aria-hidden="true">⌂</span></a>
-            <a class="rail-link active" href="regels.html" aria-label="Serverregels" aria-current="page"><span aria-hidden="true">§</span></a>
-            <a class="rail-link" href="http://188.90.129.84:8100" aria-label="Wereldkaart"><span aria-hidden="true">⌖</span></a>
+            <a class="rail-link" href="index.html" aria-label="Home">
+                <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-6v-7h-4v7H4a1 1 0 0 1-1-1z"/></svg>
+            </a>
+            <a class="rail-link active" href="regels.html" aria-label="Serverregels" aria-current="page">
+                <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 4.5A2.5 2.5 0 0 1 7.5 2H20v17H7.5A2.5 2.5 0 0 0 5 21.5z"/><path d="M5 4.5v17M9 7h7M9 11h7"/></svg>
+            </a>
+            <a class="rail-link" href="http://188.90.129.84:8100" aria-label="Wereldkaart">
+                <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m3 6 6-3 6 3 6-3v15l-6 3-6-3-6 3z"/><path d="M9 3v15m6-12v15"/></svg>
+            </a>
         </nav>
-        <a class="rail-help" href="#de-regels" aria-label="Bekijk de regels"><span aria-hidden="true">i</span></a>
+        <a class="rail-help" href="#de-regels" aria-label="Bekijk de regels">
+            <svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v5m0-8h.01"/></svg>
+        </a>
     </aside>
 
-    <main class="server-app">
-        <section class="hero rules-hero">
-            <div class="hero-background" aria-hidden="true"></div>
-            <div class="hero-overlay" aria-hidden="true"></div>
-            <div class="hero-topbar">
-                <a class="app-wordmark" href="index.html"><span class="app-mark">J</span><span>JRL SMP</span></a>
-                <p class="server-status" aria-live="polite">
-                    <span class="status-indicator status-unknown" aria-hidden="true"></span>
-                    <span data-server-state>Status controleren</span>
-                    <span class="status-divider" aria-hidden="true">·</span>
-                    <span data-server-players>Spelers laden...</span>
-                </p>
-                <a class="map-chip" href="http://188.90.129.84:8100"><span class="map-chip-dot" aria-hidden="true"></span> Wereldkaart <span aria-hidden="true">↗</span></a>
-            </div>
-            <div class="rules-hero-content">
-                <p class="hero-kicker"><span></span> SPEEL SAMEN, HOUD HET LEUK</p>
-                <h1 class="hero-title">SERVER <span>REGELS</span></h1>
-                <p class="hero-description">Een paar simpele afspraken zorgen ervoor dat iedereen<br>fijn kan spelen op de server.</p>
-                <a class="cta-button join-now" href="#de-regels"><span aria-hidden="true">⌄</span> Bekijk de regels</a>
-            </div>
-            <div class="hero-bottom">
-                <div class="server-mini-label"><span class="mini-status-dot"></span><span>JRL SMP COMMUNITY</span></div>
-                <a class="server-address" href="index.html">Terug naar home <span aria-hidden="true">↗</span></a>
-                <div class="hero-bottom-note">RESPECTEER ELKAAR</div>
-            </div>
-        </section>
+    <main class="server-app rules-app">
+        <header class="rules-topbar">
+            <a class="app-wordmark" href="index.html"><span class="app-mark">J</span><span>JRL SMP</span></a>
+            <p class="server-status" aria-live="polite">
+                <span class="status-indicator status-unknown" aria-hidden="true"></span>
+                <span data-server-state>Status controleren</span>
+                <span class="status-divider" aria-hidden="true">·</span>
+                <span data-server-players>Spelers laden...</span>
+            </p>
+            <a class="map-chip" href="http://188.90.129.84:8100"><span class="map-chip-dot" aria-hidden="true"></span> Wereldkaart <span aria-hidden="true">↗</span></a>
+        </header>
 
-        <section class="server-info rules-info" id="de-regels">
-            <div class="rules-info-heading">
-                <p class="info-eyebrow">Hou het gezellig</p>
-                <h2>De afspraken</h2>
-                <p class="info-copy">Wees aardig, speel eerlijk en geef elkaar de ruimte.</p>
+        <section class="rules-page-content" id="de-regels">
+            <div class="rules-page-heading">
+                <h1>Serverregels</h1>
             </div>
             <ol class="rules-list">
-                <li class="rule-item">
-                    <span class="rule-number">01</span>
-                    <div><h3>Niet griefen of stelen</h3><p>Blijf van andermans spullen en bouwwerken af.</p></div>
+                <li>
+                    <details class="rule-card">
+                        <summary>
+                            <span class="rule-number">01</span>
+                            <span class="rule-summary"><strong>Cheats</strong><span>Speel zonder hacks of oneerlijke hulpmiddelen.</span></span>
+                            <span class="rule-chevron" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m7 10 5 5 5-5"/></svg></span>
+                        </summary>
+                        <ul>
+                            <li>Geen hacks, cheatclients of macro's.</li>
+                            <li>Geen X-ray, of dat nu via een mod, resourcepack of een andere truc is.</li>
+                            <li>Vind je een bug of exploit? Meld het bij de staff in plaats van het te misbruiken.</li>
+                        </ul>
+                    </details>
                 </li>
-                <li class="rule-item">
-                    <span class="rule-number">02</span>
-                    <div><h3>Wees respectvol</h3><p>Geen pesten, discriminatie of schelden.</p></div>
+                <li>
+                    <details class="rule-card">
+                        <summary>
+                            <span class="rule-number">02</span>
+                            <span class="rule-summary"><strong>Griefen en stelen</strong><span>Laat spullen, bouwwerken en projecten van anderen staan.</span></span>
+                            <span class="rule-chevron" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m7 10 5 5 5-5"/></svg></span>
+                        </summary>
+                        <ul>
+                            <li>Sloop of steel niet van andermans werk.</li>
+                            <li>Sloop geen builds, farms of projecten van andere spelers.</li>
+                        </ul>
+                    </details>
                 </li>
-                <li class="rule-item">
-                    <span class="rule-number">03</span>
-                    <div><h3>Geen cheats</h3><p>Geen hacks, X-ray of andere oneerlijke voordelen.</p></div>
+                <li>
+                    <details class="rule-card">
+                        <summary>
+                            <span class="rule-number">03</span>
+                            <span class="rule-summary"><strong>PvP</strong><span>Vecht alleen met een reden en blijf in gevechten.</span></span>
+                            <span class="rule-chevron" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m7 10 5 5 5-5"/></svg></span>
+                        </summary>
+                        <ul>
+                            <li>Je mag niet zonder reden iemand doden.</li>
+                            <li>Combatloggen is niet toegestaan.</li>
+                        </ul>
+                    </details>
                 </li>
-                <li class="rule-item">
-                    <span class="rule-number">04</span>
-                    <div><h3>Geen lag-machines</h3><p>Hou redstone en farms servervriendelijk.</p></div>
-                </li>
-                <li class="rule-item">
-                    <span class="rule-number">05</span>
-                    <div><h3>Luister naar staff</h3><p>Volg aanwijzingen van moderators en admins.</p></div>
+                <li>
+                    <details class="rule-card">
+                        <summary>
+                            <span class="rule-number">04</span>
+                            <span class="rule-summary"><strong>Straffen</strong><span>De staff grijpt in als gedrag duidelijk overlast veroorzaakt.</span></span>
+                            <span class="rule-chevron" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m7 10 5 5 5-5"/></svg></span>
+                        </summary>
+                        <ul>
+                            <li>Je kunt ook worden gestraft voor gedrag dat niet letterlijk in deze regels staat, als het duidelijk vervelend is voor anderen.</li>
+                            <li>De staff kan een tijdelijke ban of een permanente ban geven.</li>
+                        </ul>
+                    </details>
                 </li>
             </ol>
         </section>
