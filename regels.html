@@ -8,28 +8,49 @@
     <title>JRL SMP | Regels</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <header class="main-header">
-        <div class="container header-inner">
-            <a class="logo" href="index.html"><span class="logo-text">JRL</span><span class="logo-highlight">SMP</span></a>
-            <nav class="main-nav" id="main-nav" aria-label="Hoofdnavigatie">
-                <a href="index.html">Home</a><a class="active" href="regels.html" aria-current="page">Regels</a><a href="http://188.90.129.84:8100">Wereldkaart</a>
-            </nav>
-            <button class="mobile-menu-btn" type="button" aria-label="Menu openen" aria-expanded="false" aria-controls="main-nav"><span></span><span></span><span></span></button>
-        </div>
-    </header>
+<body class="home-page rules-page">
+    <aside class="server-rail" aria-label="Snelle navigatie">
+        <a class="rail-logo" href="index.html" aria-label="JRL SMP home">J</a>
+        <nav class="rail-nav">
+            <a class="rail-link" href="index.html" aria-label="Home"><span aria-hidden="true">⌂</span></a>
+            <a class="rail-link active" href="regels.html" aria-label="Serverregels" aria-current="page"><span aria-hidden="true">§</span></a>
+            <a class="rail-link" href="http://188.90.129.84:8100" aria-label="Wereldkaart"><span aria-hidden="true">⌖</span></a>
+        </nav>
+        <a class="rail-help" href="#de-regels" aria-label="Bekijk de regels"><span aria-hidden="true">i</span></a>
+    </aside>
 
-    <main>
-        <section class="page-hero">
-            <div class="container page-hero-inner">
-                <p class="eyebrow">JRL SMP</p><h1>Server<span>regels</span></h1>
+    <main class="server-app">
+        <section class="hero rules-hero">
+            <div class="hero-background" aria-hidden="true"></div>
+            <div class="hero-overlay" aria-hidden="true"></div>
+            <div class="hero-topbar">
+                <a class="app-wordmark" href="index.html"><span class="app-mark">J</span><span>JRL SMP</span></a>
+                <p class="server-status" aria-live="polite">
+                    <span class="status-indicator status-unknown" aria-hidden="true"></span>
+                    <span data-server-state>Status controleren</span>
+                    <span class="status-divider" aria-hidden="true">·</span>
+                    <span data-server-players>Spelers laden...</span>
+                </p>
+                <a class="map-chip" href="http://188.90.129.84:8100"><span class="map-chip-dot" aria-hidden="true"></span> Wereldkaart <span aria-hidden="true">↗</span></a>
             </div>
-            <span class="page-index" aria-hidden="true">JRL SMP / 02</span>
+            <div class="rules-hero-content">
+                <p class="hero-kicker"><span></span> SPEEL SAMEN, HOUD HET LEUK</p>
+                <h1 class="hero-title">SERVER <span>REGELS</span></h1>
+                <p class="hero-description">Een paar simpele afspraken zorgen ervoor dat iedereen<br>fijn kan spelen op de server.</p>
+                <a class="cta-button join-now" href="#de-regels"><span aria-hidden="true">⌄</span> Bekijk de regels</a>
+            </div>
+            <div class="hero-bottom">
+                <div class="server-mini-label"><span class="mini-status-dot"></span><span>JRL SMP COMMUNITY</span></div>
+                <a class="server-address" href="index.html">Terug naar home <span aria-hidden="true">↗</span></a>
+                <div class="hero-bottom-note">RESPECTEER ELKAAR</div>
+            </div>
         </section>
 
-        <section class="rules-content section-wrap" id="de-regels">
-            <div class="rules-intro">
-                <p class="eyebrow">Hou het gezellig</p>
+        <section class="server-info rules-info" id="de-regels">
+            <div class="rules-info-heading">
+                <p class="info-eyebrow">Hou het gezellig</p>
+                <h2>De afspraken</h2>
+                <p class="info-copy">Wees aardig, speel eerlijk en geef elkaar de ruimte.</p>
             </div>
             <ol class="rules-list">
                 <li class="rule-item">
@@ -54,16 +75,8 @@
                 </li>
             </ol>
         </section>
-
+        <footer class="app-footer"><span>JRL SMP</span><span>Een kleine server voor de schoolvrienden.</span></footer>
     </main>
-
-    <footer class="main-footer">
-        <div class="container footer-inner">
-            <a class="footer-brand" href="index.html">JRL<span>SMP</span></a>
-            <nav class="footer-links" aria-label="Footer navigatie"><a href="regels.html">Regels</a><a href="http://188.90.129.84:8100">Wereldkaart</a></nav>
-            <span class="footer-bottom">© JRL SMP</span>
-        </div>
-    </footer>
     <script src="script.js" defer></script>
 </body>
 </html>

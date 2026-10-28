@@ -9,77 +9,64 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
-<body>
-    <header class="main-header">
-        <div class="container header-inner">
-            <a class="logo" href="index.html" aria-label="JRL SMP home">
-                <span class="logo-text">JRL</span><span class="logo-highlight">SMP</span>
-            </a>
-            <nav class="main-nav" id="main-nav" aria-label="Hoofdnavigatie">
-                <a class="active" href="index.html" aria-current="page">Home</a>
-                <a href="regels.html">Regels</a>
-                <a href="http://188.90.129.84:8100">Wereldkaart</a>
-            </nav>
-            <button class="mobile-menu-btn" type="button" aria-label="Menu openen" aria-expanded="false" aria-controls="main-nav">
-                <span></span><span></span><span></span>
-            </button>
-        </div>
-    </header>
+<body class="home-page">
+    <aside class="server-rail" aria-label="Snelle navigatie">
+        <a class="rail-logo" href="index.html" aria-label="JRL SMP home">J</a>
+        <nav class="rail-nav">
+            <a class="rail-link active" href="index.html" aria-label="Home" aria-current="page"><span aria-hidden="true">⌂</span></a>
+            <a class="rail-link" href="regels.html" aria-label="Serverregels"><span aria-hidden="true">§</span></a>
+            <a class="rail-link" href="http://188.90.129.84:8100" aria-label="Wereldkaart"><span aria-hidden="true">⌖</span></a>
+        </nav>
+        <a class="rail-help" href="#server-info" aria-label="Serverinformatie"><span aria-hidden="true">i</span></a>
+    </aside>
 
-    <main>
+    <main class="server-app">
         <section class="hero">
             <div class="hero-background" aria-hidden="true"></div>
             <div class="hero-overlay" aria-hidden="true"></div>
-            <div class="container hero-container">
-                <div class="hero-content">
-                    <p class="server-status"><span class="status-indicator"></span> SURVIVAL <span class="status-divider">·</span> 1.21+</p>
-                    <h1 class="hero-title"><span class="title-highlight">JRL</span><span class="title-gradient">SMP</span></h1>
-                    <div class="hero-buttons">
-                        <a class="cta-button join-now" href="#server-ip">Server IP <span aria-hidden="true">↓</span></a>
-                        <a class="cta-button secondary-button" href="http://188.90.129.84:8100">Wereldkaart <span aria-hidden="true">↗</span></a>
-                    </div>
+            <div class="hero-topbar">
+                <a class="app-wordmark" href="index.html"><span class="app-mark">J</span><span>JRL SMP</span></a>
+                <p class="server-status" aria-live="polite">
+                    <span class="status-indicator status-unknown" aria-hidden="true"></span>
+                    <span data-server-state>Status controleren</span>
+                    <span class="status-divider" aria-hidden="true">·</span>
+                    <span data-server-players>Spelers laden...</span>
+                </p>
+                <a class="map-chip" href="http://188.90.129.84:8100"><span class="map-chip-dot" aria-hidden="true"></span> Wereldkaart <span aria-hidden="true">↗</span></a>
+            </div>
+            <div class="hero-content">
+                <p class="hero-kicker"><span></span> DE JRL SMP SERVER</p>
+                <h1 class="hero-title">JRL <span>SMP</span></h1>
+                <p class="hero-description">Een kleine survivalserver voor vrienden en klasgenoten.<br> Kom bouwen, ontdekken en spelen.</p>
+                <div class="hero-buttons">
+                    <a class="cta-button join-now" href="#server-info"><span aria-hidden="true">⌄</span> Serverinformatie</a>
+                    <a class="cta-button secondary-button" href="regels.html">Bekijk de regels <span aria-hidden="true">↗</span></a>
                 </div>
             </div>
-            <a class="hero-scroll-indicator" href="#links" aria-label="Bekijk de pagina">
-                <span aria-hidden="true">⌄</span>
-            </a>
-        </section>
-
-        <section class="quick-links" id="links" aria-label="Serverpagina's">
-            <div class="container">
-                <div class="links-grid">
-                    <a href="regels.html" class="link-card rules">
-                        <span class="link-overlay" aria-hidden="true"></span>
-                        <span class="link-content"><span class="link-symbol" aria-hidden="true">§</span><span class="link-title">Regels</span><span class="link-arrow" aria-hidden="true">↗</span></span>
-                    </a>
-                    <a href="http://188.90.129.84:8100" class="link-card world-map">
-                        <span class="link-overlay" aria-hidden="true"></span>
-                        <span class="link-content"><span class="link-symbol" aria-hidden="true">⌖</span><span class="link-title">Wereldkaart</span><span class="link-arrow" aria-hidden="true">↗</span></span>
-                    </a>
-                </div>
+            <div class="hero-bottom">
+                <div class="server-mini-label"><span class="mini-status-dot"></span><span>JAVA SURVIVAL</span></div>
+                <a class="server-address" href="#server-info">188.90.129.84 <span aria-hidden="true">↓</span></a>
+                <div class="hero-bottom-note">TOT ZIENS OP DE SERVER</div>
             </div>
         </section>
 
-        <section class="server-section" id="server-ip">
-            <div class="container server-panel">
-                <div class="server-wordmark"><span>JRL</span><strong>SMP</strong></div>
-                <div class="server-ip-box">
-                    <span class="server-label">SERVER IP</span>
-                    <span class="ip-display">IP volgt</span>
-                </div>
+        <section class="server-info" id="server-info">
+            <div>
+                <p class="info-eyebrow">Klaar om te spelen?</p>
+                <h2>Serverinformatie</h2>
+                <p class="info-copy">Voeg het adres toe in Minecraft Java en speel mee.</p>
+            </div>
+            <div class="info-address">
+                <span>SERVER IP</span>
+                <strong>188.90.129.84</strong>
+                <span class="version-note">Minecraft Java · Survival</span>
+            </div>
+            <div class="info-actions">
+                <a class="info-link" href="http://188.90.129.84:8100">Open wereldkaart <span aria-hidden="true">↗</span></a>
+                <a class="info-link" href="regels.html">Serverregels <span aria-hidden="true">↗</span></a>
             </div>
         </section>
+        <footer class="app-footer"><span>JRL SMP</span><span>Een kleine server voor de schoolvrienden.</span></footer>
     </main>
-
-    <footer class="main-footer">
-        <div class="container footer-inner">
-            <a class="footer-brand" href="index.html">JRL<span>SMP</span></a>
-            <nav class="footer-links" aria-label="Footer navigatie">
-                <a href="regels.html">Regels</a>
-                <a href="http://188.90.129.84:8100">Wereldkaart</a>
-            </nav>
-            <span class="footer-bottom">© JRL SMP</span>
-        </div>
-    </footer>
 </body>
 </html>
