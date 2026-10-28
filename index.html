@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0b120c">
+    <meta name="description" content="JRL SMP — Minecraft survival met vrienden.">
+    <title>JRL SMP | Home</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="main-header">
+        <div class="container header-inner">
+            <a class="logo" href="index.html" aria-label="JRL SMP home">
+                <span class="logo-text">JRL</span><span class="logo-highlight">SMP</span>
+            </a>
+            <nav class="main-nav" id="main-nav" aria-label="Hoofdnavigatie">
+                <a class="active" href="index.html" aria-current="page">Home</a>
+                <a href="regels.html">Regels</a>
+                <a href="http://188.90.129.84:8100">Wereldkaart</a>
+            </nav>
+            <button class="mobile-menu-btn" type="button" aria-label="Menu openen" aria-expanded="false" aria-controls="main-nav">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-background" aria-hidden="true"></div>
+            <div class="hero-overlay" aria-hidden="true"></div>
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <p class="server-status"><span class="status-indicator"></span> SURVIVAL <span class="status-divider">·</span> 1.21+</p>
+                    <h1 class="hero-title"><span class="title-highlight">JRL</span><span class="title-gradient">SMP</span></h1>
+                    <div class="hero-buttons">
+                        <a class="cta-button join-now" href="#server-ip">Server IP <span aria-hidden="true">↓</span></a>
+                        <a class="cta-button secondary-button" href="http://188.90.129.84:8100">Wereldkaart <span aria-hidden="true">↗</span></a>
+                    </div>
+                </div>
+            </div>
+            <a class="hero-scroll-indicator" href="#links" aria-label="Bekijk de pagina">
+                <span aria-hidden="true">⌄</span>
+            </a>
+        </section>
+
+        <section class="quick-links" id="links" aria-label="Serverpagina's">
+            <div class="container">
+                <div class="links-grid">
+                    <a href="regels.html" class="link-card rules">
+                        <span class="link-overlay" aria-hidden="true"></span>
+                        <span class="link-content"><span class="link-symbol" aria-hidden="true">§</span><span class="link-title">Regels</span><span class="link-arrow" aria-hidden="true">↗</span></span>
+                    </a>
+                    <a href="http://188.90.129.84:8100" class="link-card world-map">
+                        <span class="link-overlay" aria-hidden="true"></span>
+                        <span class="link-content"><span class="link-symbol" aria-hidden="true">⌖</span><span class="link-title">Wereldkaart</span><span class="link-arrow" aria-hidden="true">↗</span></span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="server-section" id="server-ip">
+            <div class="container server-panel">
+                <div class="server-wordmark"><span>JRL</span><strong>SMP</strong></div>
+                <div class="server-ip-box">
+                    <span class="server-label">SERVER IP</span>
+                    <span class="ip-display">IP volgt</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container footer-inner">
+            <a class="footer-brand" href="index.html">JRL<span>SMP</span></a>
+            <nav class="footer-links" aria-label="Footer navigatie">
+                <a href="regels.html">Regels</a>
+                <a href="http://188.90.129.84:8100">Wereldkaart</a>
+            </nav>
+            <span class="footer-bottom">© JRL SMP</span>
+        </div>
+    </footer>
+</body>
+</html>
